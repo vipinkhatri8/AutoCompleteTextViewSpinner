@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF5722"
+    tools:context=".MainActivity">
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/spinner_category"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxCornerRadiusBottomEnd="@dimen/_50sdp"
+            app:boxCornerRadiusBottomStart="@dimen/_50sdp"
+            app:boxCornerRadiusTopEnd="@dimen/_50sdp"
+            app:boxCornerRadiusTopStart="@dimen/_50sdp"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidth="1dp"
+            app:endIconDrawable="@drawable/ic_tm_drop_down_blackl"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:drawableStart="@drawable/ic_select_category"
+                android:drawableEnd="@drawable/ic_tm_drop_down_blackl"
+                android:drawablePadding="@dimen/_10sdp"
+                android:gravity="center_vertical"
+                android:inputType="none"
+                android:paddingStart="0dp"
+                android:text="Select Category"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
